@@ -1,0 +1,37 @@
+name: mosdef_cecame
+channels:
+  - conda-forge
+  - conda-forge/label/hoomd_dev
+  - bioconda
+dependencies:
+  - constrainmol
+  - ele
+  - foyer
+  - freud
+  - gmso
+  - gromacs=2020.6
+  - gsd
+  - h5py
+  - jupyter
+  - jinja2
+  - lammps
+  - matplotlib
+  - mbuild
+  - mdtraj
+  - mosdef_cassandra
+  - numpy
+  - openmm>=7.6
+  - packmol>=18
+  - pandas
+  - panedr
+  - parmed>=3.4.3
+  - pymbar=3.0.5
+  - pytest
+  - python=3.10
+  - rdkit
+  - scipy=1.9.0
+  - seaborn
+  - signac=1.7.0
+  - signac-dashboard
+  - signac-flow=0.20.0
+  - unyt
