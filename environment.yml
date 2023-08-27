@@ -1,4 +1,4 @@
-name: mosdef_cecame
+name: mosdef_cecam
 channels:
   - conda-forge
   - conda-forge/label/hoomd_dev
@@ -9,7 +9,7 @@ dependencies:
   - foyer
   - freud
   - gmso
-  - gromacs=2020.6
+  - gromacs
   - gsd
   - h5py
   - jupyter
