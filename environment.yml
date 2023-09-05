@@ -8,7 +8,7 @@ dependencies:
   - ele
   - foyer
   - freud
-  - gmso
+  - gmso>=0.11.1
   - gromacs
   - gsd
   - h5py
@@ -35,4 +35,4 @@ dependencies:
   - signac-dashboard
   - signac-flow=0.20.0
   - unyt
-  #test ej edit
+  - py3dmol
