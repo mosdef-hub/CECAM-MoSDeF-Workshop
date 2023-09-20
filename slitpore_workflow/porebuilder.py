@@ -1,10 +1,12 @@
+'''
+This code is based on the code written by Ray Matsumoto  at https://github.com/PTC-CMC/Pore-Builder.
+The name of the functions have remained the same.
+'''
+
 import mbuild as mb
 import numpy as np
-'''
-This code is based on the code written by Ray Matsumoto
-The name of the functions have remained the same
-'''
-__all__ = ['GraphenePore', 'GrapheneSurface']
+
+__all__ = ['GraphenePore']
 
 
 class GraphenePore(mb.Compound):
