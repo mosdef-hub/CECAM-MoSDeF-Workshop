@@ -40,3 +40,14 @@ These tutotial workflows are designed to work on Google Colab. User can access t
 ### Learning Objectives
 
 ### Other useful resources
+
+More in-depth MoSDeF tutorials: https://github.com/mosdef-hub/mosdef_tutorials
+
+Example MoSDeF workflow: https://github.com/mosdef-hub/mosdef-workflows
+
+
+Documentations:
+
+    - https://mbuild.mosdef.org/en/stable/
+    - https://foyer.mosdef.org/en/stable/
+    - https://gmso.mosdef.org/en/stable/
