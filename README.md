@@ -9,6 +9,8 @@ The Molecular Simulation Design Framework, or MoSDeF,1 is an collaborative proje
 
 These principals allow for the creation of more diverse workflow, that is, utilizing multiple simulation engines to perform each steps of the simulation process, and simulate systems at multiple scales, e.g, ab initio, atomistic, coarse-grained, and more. Most importantly, the MoSDeF software suite trivialize the distribution of the system's initialization, and parameterization process, ensure their reproducibility by the general community.
 
+The MoSDeF software suite consist of three core libraries, namely [mBuild](https://github.com/mosdef-hub/mbuild), [Foyer](https://github.com/mosdef-hub/foyer), and [GMSO](https://github.com/mosdef-hub/gmso). Each library dedicates to handle a certain step of the chemical system initialization process, as summarized in the figure below.
+
 
 ![image](images/mosdef_scheme.jpg)
 
@@ -27,8 +29,14 @@ Through these workflow, we want to demonstrate how our libraries can be used to 
 
 These tutotial workflows are designed to work on Google Colab. User can access these notebooks through the below links:
 
+### Installation Instruction
 - [Water Adsorption in Graphene Slitpore](https://colab.research.google.com/github/mosdef-hub/CECAM-MoSDeF-Workshop/blob/main/slitpore_workflow/Slitpore-Workflow.ipynb)
 
 - [Biomolecule](https://colab.research.google.com/github/daico007/CECAM-MoSDeF-Workshop/blob/main/biomolecule_workflow/Biomolecule-Workflow.ipynb)
 - [Polymer](https://colab.research.google.com/github/daico007/CECAM-MoSDeF-Workshop/blob/main/polymer_workflow/hoomd-organics.ipynb)
 - [Solvated Surface](https://colab.research.google.com/github/daico007/CECAM-MoSDeF-Workshop/blob/main/solvated_surface_workflow/Solvated_Surface.ipynb)
+
+
+### Learning Objectives
+
+### Other useful resources
