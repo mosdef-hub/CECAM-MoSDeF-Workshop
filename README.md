@@ -1,3 +1,8 @@
+
+<p align="center">
+    <img src="images/cecam_logo.png"/>
+</p>
+
 # CECAM-MoSDeF-Workshop
 Welcome to the MoSDeF tutorial at the CECAM Flagship Workshop: Proposal FAIR and TRUE Data Processing for Soft Matter Simulations.
 
@@ -11,8 +16,9 @@ These principals allow for the creation of more diverse workflow, that is, utili
 
 The MoSDeF software suite consist of three core libraries, namely [mBuild](https://github.com/mosdef-hub/mbuild), [Foyer](https://github.com/mosdef-hub/foyer), and [GMSO](https://github.com/mosdef-hub/gmso). Each library dedicates to handle a certain step of the chemical system initialization process, as summarized in the figure below.
 
-
-![image](images/mosdef_scheme.jpg)
+<p align="center">
+    <img src="images/mosdef_scheme.jpg" width="500"/>
+</p>
 
 ## The MoSDeF Workflow: Towards TRUE Simulations
 Transparent, Reproducible, Usable by others, and Extensible (TRUE) are four criteria for published computational simulation research introduced by Thompson et al. The TRUE criteria are introduced to encounter the (ir)reproducibility issues in the community, which, in many cases, can be attributed to:
@@ -51,3 +57,8 @@ Documentations:
     - https://mbuild.mosdef.org/en/stable/
     - https://foyer.mosdef.org/en/stable/
     - https://gmso.mosdef.org/en/stable/
+
+
+<p align="center">
+    <img src="images/mosdef_logo.svg"/>
+</p>
