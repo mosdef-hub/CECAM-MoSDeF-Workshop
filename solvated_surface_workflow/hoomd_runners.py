@@ -115,7 +115,7 @@ def nvt_run(job, parameterized_top, snapshot, forces):
     thermo_logger = hoomd.logging.Logger(categories=['scalar', 'string'])
     thermo_logger.add(sim, quantities=['timestep', 'tps'])
     thermo_logger.add(thermodynamic_properties, ['kinetic_temperature', "potential_energy"]) 
-    gsd_writer.logger = thermo_outlogger
+    gsd_writer.logger = thermo_logger
     sim.operations.writers.append(gsd_writer)
     sim.run(500000)
     hoomd.write.GSD.write(state=sim.state,
