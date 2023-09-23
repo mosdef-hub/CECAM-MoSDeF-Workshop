@@ -6134,6 +6134,23 @@
         <Parameter name="theta_eq" value="1.8242181341844732"/>
       </Parameters>
     </AngleType>
+    <!-- Edits start here -->
+    <!-- Substituting parameters for (c1,c3,n3) -->
+    <AngleType name="HarmonicAnglePotential" class1="c1" class2="c3" class3="n2">
+      <Parameters>
+        <Parameter name="k" value="562.3296"/>
+        <Parameter name="theta_eq" value="1.9675096657732076"/>
+      </Parameters>
+    </AngleType>
+    'c3', 'c1', 'oh'
+    <!-- Supstituting parameters for (c3,c2,oh) -->
+    <AngleType name="HarmonicAnglePotential" class1="c3" class2="c1" class3="oh">
+      <Parameters>
+        <Parameter name="k" value="571.5344"/>
+        <Parameter name="theta_eq" value="2.0099211665966696"/>
+    </Parameters>
+    </AngleType>
+    <!-- and end here -->
     <AngleType name="HarmonicAnglePotential" class1="hw" class2="hw" class3="ow">
       <Parameters>
         <Parameter name="k" value="0.0"/>
