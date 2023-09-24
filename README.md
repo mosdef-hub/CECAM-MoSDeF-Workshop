@@ -17,7 +17,7 @@ These principals allow for the creation of more diverse workflow, that is, utili
 The MoSDeF software suite consist of three core libraries, namely [mBuild](https://github.com/mosdef-hub/mbuild), [Foyer](https://github.com/mosdef-hub/foyer), and [GMSO](https://github.com/mosdef-hub/gmso). Each library dedicates to handle a certain step of the chemical system initialization process, as summarized in the figure below.
 
 <p align="center">
-    <img src="images/mosdef_scheme.png" width="500"/>
+    <img src="images/mosdef_scheme.jpg" width="500"/>
 </p>
 
 ## The MoSDeF Workflow: Towards TRUE Simulations
