@@ -17,7 +17,7 @@ You can open the terminal application on MacOS by either:
 2. Open Launchpad and look for the “Terminal” app
 
 #### Linux- open terminal
-1. `Ctrl + Alt + T
+1. `Ctrl + Alt + T`
 
 ## Set up Anaconda Environments
 
