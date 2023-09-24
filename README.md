@@ -7,7 +7,7 @@
 Welcome to the MoSDeF tutorial at the CECAM Flagship Workshop: Proposal FAIR and TRUE Data Processing for Soft Matter Simulations.
 
 ## About MoSDeF
-The _Mo_lecular _S_imulation _De_sign _F_ramework, or _MoSDeF_, is a collaborative project focused on developing an open-source software suite to assist with the preparation of chemical/biological systems for molecular simulation. The framework strives to create tools that are:
+The <ins>Mo</ins>lecular <ins>S</ins>imulation <ins>De</ins>sign <ins>F</ins>ramework, or _MoSDeF_, is a collaborative project focused on developing an open-source software suite to assist with the preparation of chemical/biological systems for molecular simulation. The framework strives to create tools that are:
 - Non-specific
 - Force field agnostic
 - Engine agnostic
@@ -53,7 +53,7 @@ More in-depth MoSDeF tutorials: https://github.com/mosdef-hub/mosdef_tutorials
 Example MoSDeF workflow: https://github.com/mosdef-hub/mosdef-workflows
 
 
-Documentations:
+Documentation:
 
     - https://mbuild.mosdef.org/en/stable/
     - https://foyer.mosdef.org/en/stable/
