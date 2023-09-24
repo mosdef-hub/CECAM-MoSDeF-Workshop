@@ -1,4 +1,4 @@
-<ForceField>
+<ForceField name="spce" combining_rule="geometric">
  <AtomTypes>
   <Type name="spce_O" class="OW" element="O" mass="15.999" def="[O;X2](H)(H)" desc="water oxygen"/>
   <Type name="spce_H" class="HW" element="H" mass="1.008" def="H[O;X2](H)" desc="water hydrogen"/>
