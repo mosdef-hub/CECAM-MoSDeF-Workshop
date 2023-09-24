@@ -7,7 +7,7 @@
 Welcome to the MoSDeF tutorial at the CECAM Flagship Workshop: Proposal FAIR and TRUE Data Processing for Soft Matter Simulations.
 
 ## About MoSDeF
-The Molecular Simulation Design Framework, or MoSDeF,1 is an collaborative project focus on developing an open-source software suite to assist with the preparation of chemical/biological systems for molecular simulation. The framework strives to create tools that are
+The Molecular Simulation Design Framework, or MoSDeF, is an collaborative project focus on developing an open-source software suite to assist with the preparation of chemical/biological systems for molecular simulation. The framework strives to create tools that are
 - Non-specific
 - Force field agnostic
 - Engine agnostic
