@@ -31,8 +31,8 @@ dependencies:
   - rdkit
   - scipy=1.9.0
   - seaborn
-  - signac=1.7.0
+  - signac=2.0.0
   - signac-dashboard
-  - signac-flow=0.20.0
+  - signac-flow=0.25.1
   - unyt
   - py3dmol
