@@ -42,8 +42,9 @@ These tutotial workflows are designed to work on Google Colab. User can access t
 - [Biomolecule](https://colab.research.google.com/github/daico007/CECAM-MoSDeF-Workshop/blob/main/biomolecule_workflow/Biomolecule-Workflow.ipynb)
 - [Polymer](https://colab.research.google.com/github/daico007/CECAM-MoSDeF-Workshop/blob/main/polymer_workflow/hoomd-organics.ipynb)
 - [Solvated Surface](https://colab.research.google.com/github/daico007/CECAM-MoSDeF-Workshop/blob/main/solvated_surface_workflow/Solvated_Surface.ipynb)
-- [Local Installation Instructions](MoSDeF-Installation/README.md)
-    -   Instructions if you want to install and run these notebooks locally.
+
+
+To setup and run these workflow locally, please follow the [Local Installation Instructions](MoSDeF-Installation/README.md).
 
 
 ### Other useful resources
