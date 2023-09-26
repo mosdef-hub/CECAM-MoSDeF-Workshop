@@ -129,7 +129,7 @@ def nvt_run(job, parameterized_top, snapshot, forces):
     sim.run(500000)
     hoomd.write.GSD.write(state=sim.state,
       mode='xb',
-      filename=save_dir+'production-out.gsd'
+      filename=job.fn('production-out.gsd')
     )
     outlogger.flush()
     thermo_logger.flush()
@@ -178,7 +178,7 @@ def render(snapshot, particles=None, is_solid=None, indices=None, indsDict=None)
         N=N,
         #radius=.05
     )
-    
+
     #geometry.material = fresnel.material.Material(
     #    color=fresnel.color.linear([0.01, 0.74, 0.26]),
     #    roughness=0.5
@@ -186,7 +186,7 @@ def render(snapshot, particles=None, is_solid=None, indices=None, indsDict=None)
     geometry.material = fresnel.material.Material(
         roughness=0.5
     )
-    geometry.material.primitive_color_mix = 1.0 
+    geometry.material.primitive_color_mix = 1.0
     size_scalar=0.09
     for element, indsList in indsDict.items():
         geometry.color[indsList] = fresnel.color.linear(list(atom_colorDict[element] / 255))
@@ -219,18 +219,17 @@ def render(snapshot, particles=None, is_solid=None, indices=None, indsDict=None)
 
 
 def render_movie(frames, job, particles=None, is_solid=None, indices=None):
-    
+
     cpd = mb.load(job.fn("init.gro"))
     top = cpd.to_gmso()
     from gmso.core.element import element_by_symbol
- 
     for site in top.sites:
         if site.name == "O_Sur":
             site.element_ = element_by_symbol("O")
-            
+
     if is_solid is None:
         is_solid = [None] * len(frames)
-        
+
     ## identify chemistry in topology
     indsDict = {"C":[], "H":[], "O":[], "Si":[]}
     for i,site in enumerate(top.sites):
@@ -239,7 +238,7 @@ def render_movie(frames, job, particles=None, is_solid=None, indices=None):
                 continue
         if site.element.symbol in atom_colorDict:
             indsDict[site.element.symbol].append(i)
-        
+
     a = render(frames[0], indices=indices, indsDict=indsDict)
 
     im0 = PIL.Image.fromarray(a[:, :, 0:3], mode='RGB').convert(
