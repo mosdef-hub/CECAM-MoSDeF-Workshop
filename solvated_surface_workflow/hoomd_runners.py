@@ -129,7 +129,7 @@ def nvt_run(job, parameterized_top, snapshot, forces):
     sim.run(500000)
     hoomd.write.GSD.write(state=sim.state,
       mode='xb',
-      filename=save_dir+'production-out.gsd'
+      filename=job.fn('production-out.gsd')
     )
     outlogger.flush()
     thermo_logger.flush()
