@@ -153,8 +153,10 @@ atom_sizeDict = {
     "Si":1
 }
 
-
+from collections.abc import Iterable
 def render(snapshot, particles=None, is_solid=None, indices=None, indsDict=None):
+    if indices is not None:
+        assert issubclass(type(indices), Iterable)
     if ('version' not in dir(fresnel) or packaging.version.parse(
             fresnel.version.version) < FRESNEL_MIN_VERSION
             or packaging.version.parse(
@@ -167,7 +169,7 @@ def render(snapshot, particles=None, is_solid=None, indices=None, indsDict=None)
     if particles is not None:
         N = len(particles)
     if is_solid is not None:
-        N = int(np.sum(is_solid))
+        N = len(indices)
 
     scene = fresnel.Scene(device)
 
@@ -192,7 +194,7 @@ def render(snapshot, particles=None, is_solid=None, indices=None, indsDict=None)
     if indices is None:
         geometry.position[:] = snapshot.particles.position[:]
     else:
-        geometry.position[:protein.shape[0]] = snapshot.particles.position[:protein.shape[0]]
+        geometry.position[indices] = snapshot.particles.position[indices]
 
 
     geometry.outline_width = 0.0001
@@ -221,6 +223,7 @@ def render_movie(frames, job, particles=None, is_solid=None, indices=None):
     cpd = mb.load(job.fn("init.gro"))
     top = cpd.to_gmso()
     from gmso.core.element import element_by_symbol
+ 
     for site in top.sites:
         if site.name == "O_Sur":
             site.element_ = element_by_symbol("O")
@@ -231,6 +234,9 @@ def render_movie(frames, job, particles=None, is_solid=None, indices=None):
     ## identify chemistry in topology
     indsDict = {"C":[], "H":[], "O":[], "Si":[]}
     for i,site in enumerate(top.sites):
+        if indices is not None:
+            if i not in indices:
+                continue
         if site.element.symbol in atom_colorDict:
             indsDict[site.element.symbol].append(i)
         
