@@ -1,5 +1,4 @@
-# Gibbs Ensemble Monte Carlo simulation for the computation of the vapor-
-# liquid equilibrium of the R32 refrigerant.
+# Gibbs Ensemble Monte Carlo simulation for the computation of the vapor-liquid equilibrium of the R32 refrigerant.
 
 
 This directory contains a Gibbs Ensemble Monte Carlo (GEMC) `mosdef_cassandra` script
